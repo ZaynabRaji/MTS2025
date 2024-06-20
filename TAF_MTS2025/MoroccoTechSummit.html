@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morocco Tech Summit 2025</title>
+    <link rel="stylesheet" href="MoroccoTechSummit.css">
+</head>
+
+<body>
+
+    <!-- menu de navigation -->
+    <div>
+        <ul class="navigation">
+            <li><a href="MoroccoTechSummit.html">
+                    <img src="logo_mts2025.png" alt="logo Morocco Tech Summit 2025"></a>
+            </li>
+            <li><a href="">About Event</a></li>
+            <li><a href="">Event Program</a></li>
+            <li><a href="">Partners</a></li>
+            <li><a href="">Speakers</a></li>
+            <li><a href="">Registration Form</a></li>
+        </ul>
+    </div>
+    <!-- Section d'accueil avec le titre de l'événement, la date et le lieu -->
+    <div class="homepage">
+        <h1>
+            Morocco Tech Summit <br>
+            Marrakesh, April 14-16/2025
+        </h1>
+        <h2>
+            "Unleashing the Boundaries of Tech..."
+            <div><img src="images.jpeg" alt="picture of the event"></div>
+        </h2>
+        <P>
+            The Morocco Tech Summit, also known as GITEX Africa, is scheduled to take place from April 14-16, 2025, in
+            Marrakech, Morocco. 
+            <br>This event will bring together global tech leaders, startups, investors, and government
+            officials to explore and discuss the latest technological advancements and opportunities within the African
+            continent
+        ​</P>
+    </div>
+    <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script class="script">
+// Set the date we're counting down to
+var countDownDate = new Date("April 14, 2025 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Today";
+  }
+}, 1000);
+</script>
+    <!-- Pied de page (footer) -->
+    <div class="footer">
+        <ul>
+            <li><a href="MoroccoTechSummit.html">
+                    <img src="logo_mts2025.png" alt="logo Morocco Tech Summit 2025"></a>
+                <br>
+            </li>
+            <li><a href="https://twitter.com/">
+                    <img src="twitter.png" alt="logo twitter">
+                </a></li>
+            <li><a href="https://www.instagram.com/">
+                    <img src="instagram.png" alt="logo instagram">
+                </a></li>
+            <li><a href="">ATerms and conditions</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Cookie policy</a></li>
+
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+li {
+    list-style-type: none;
+    margin: 0.5em;
+    overflow: hidden;
+    display: inline;
+    padding: 1em;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.homepage {
+    background-color: rgb(137, 10, 10);
+    color: white;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.script {
+    font-size: 9em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.footer {
+    padding: 1em;
+    background: grey;
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+}
